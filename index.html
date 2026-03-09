@@ -3,9 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
+    <title>WDD 231 Web Frontend Development Isaac Endicott</title>
+    <meta
+      name="description"
+      content="This is the home page for Isaac Endicott's WDD 231 - Web Frontend Development class."
+    />
+    <meta name="author" content="Isaac Endicott" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- Scripts -->
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <header>
+      <img
+        src="images/site-logo.svg"
+        alt="Site Logo"
+        width="512"
+        height="512"
+      />
+      <span>Isaac Endicott</span>
+      <button
+        id="ham-btn"
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation menu"
+      ></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber-project.html">Chamber Project</a></li>
+        <li><a href="final-project.html">Final Project</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="main-heading" id="main-heading">Home</h1>
+      <section class="about-section">
+        <h2 class="section-header">About Me</h2>
+        <p>
+          I was born in Utah and spent time in California as a kid. I spent my
+          early adult years living in Taiwan with my spouse Annebell. I am
+          currently working as a software engineer for a financial tech company
+          working on providing payment switching and bill management solutions
+          for banks' customers.
+        </p>
+      </section>
+      <section class="photo-section">
+        <h2 class="section-header">Student Photo</h2>
+        <img src="images/profile-image.jpeg" alt="Isaac Endicott Portrait" />
+      </section>
+      <section class="courses-section">
+        <h2 class="section-header">Web Certificate Courses</h2>
+        <button class="course-button" id="all-courses">ALL</button>
+        <button class="course-button" id="wdd-courses">WDD</button>
+        <button class="course-button" id="cse-courses">CSE</button>
+        <ul class="course-list" id="course-list"></ul>
+        <p id="total-credits"></p>
+      </section>
+    </main>
+    <footer>
+      <nav class="social-media">
+        <a href="https://github.com/endicottisaac/"
+          ><img src="images/github.svg" alt="GitHub"
+        /></a>
+        <a href="https://www.linkedin.com/in/isaac-endicott-92b133186/"
+          ><img src="images/linkedin-circle.svg" alt="LinkedIn"
+        /></a>
+        <a href="mailto:endicottisaac@gmail.com"
+          ><img src="images/envelope.svg" alt="Email"
+        /></a>
+      </nav>
+      <div class="copyright">
+        <p>&copy; <span id="current-year"></span> Isaac Endicott - Utah</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
   </body>
 </html>
