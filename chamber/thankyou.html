@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You - Sandy Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Thank you for applying for membership in the Sandy Utah Chamber of Commerce."
+    />
+    <meta name="author" content="Isaac Endicott" />
+
+    <meta property="og:title" content="Thank You - Sandy Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://endicottisaac.github.io/wdd231/chamber/images/sandy-chamber-og.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://endicottisaac.github.io/wdd231/chamber/thankyou.html"
+    />
+    <meta
+      property="og:description"
+      content="Thank you for applying for membership."
+    />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script type="module" src="scripts/thankyou.mjs"></script>
+    <script type="module" src="scripts/footer.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/chamber-logo.svg"
+        alt="Sandy Chamber of Commerce Logo"
+        width="512"
+        height="512"
+      />
+      <span>Sandy Chamber of Commerce</span>
+      <button
+        id="ham-btn"
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation menu"
+      ></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="thank-you-section">
+        <h1>Thank You for Applying!</h1>
+        <p>
+          We have received your membership application. We will review your
+          information and contact you soon.
+        </p>
+
+        <div class="application-summary">
+          <h2>Application Summary</h2>
+          <p><strong>Name:</strong> <span id="display-name"></span></p>
+          <p><strong>Email:</strong> <span id="display-email"></span></p>
+          <p><strong>Mobile:</strong> <span id="display-mobile"></span></p>
+          <p>
+            <strong>Organization:</strong>
+            <span id="display-organization"></span>
+          </p>
+          <p>
+            <strong>Title:</strong>
+            <span id="display-title"></span>
+          </p>
+          <p>
+            <strong>Membership Level:</strong>
+            <span id="display-membership"></span>
+          </p>
+          <p>
+            <strong>Submitted:</strong>
+            <span id="display-timestamp"></span>
+          </p>
+        </div>
+
+        <a href="index.html" class="return-button">Return to Home</a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <h3>Sandy Chamber of Commerce</h3>
+        <p>10000 S Centennial Parkway</p>
+        <p>Sandy, UT 84070</p>
+        <p>Phone: (801) 555-5555</p>
+        <p>Email: info@sandychamber.com</p>
+      </div>
+      <div class="footer-credits">
+        <p>&copy; <span id="current-year"></span> Sandy Chamber of Commerce</p>
+        <p>Isaac Endicott | WDD 231</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>

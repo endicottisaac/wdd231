@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Sandy Outdoor Adventure",
+    "address": "10450 S State St, Sandy, UT 84070",
+    "phone": "(801) 555-0101",
+    "website": "https://sandyoutdoor.com",
+    "image": "outdoor-adventure.jpg",
+    "membershipLevel": 3,
+    "tagline": "Utah's best outdoor adventure company"
+  },
+  {
+    "name": "Mountain View Dental",
+    "address": "9876 S 700 E, Sandy, UT 84094",
+    "phone": "(801) 555-0202",
+    "website": "https://mountainviewdental.com",
+    "image": "dental-office.jpg",
+    "membershipLevel": 2,
+    "tagline": "Healthy Smiles Every Day"
+  },
+  {
+    "name": "Sandy Tech Solutions",
+    "address": "201 E 9400 S, Sandy, UT 84070",
+    "phone": "(801) 555-0303",
+    "website": "https://sandytech.com",
+    "image": "tech-solutions.jpg",
+    "membershipLevel": 3,
+    "tagline": "Providing expert IT services"
+  },
+  {
+    "name": "Wasatch Coffee Roasters",
+    "address": "7652 Union Park Ave, Sandy, UT 84047",
+    "phone": "(801) 555-0404",
+    "website": "https://wasatchcoffee.com",
+    "image": "coffee-roasters.jpg",
+    "membershipLevel": 1,
+    "tagline": "Tastes like a punch from the mountains"
+  },
+  {
+    "name": "Alta Fitness Center",
+    "address": "10600 S 1300 E, Sandy, UT 84092",
+    "phone": "(801) 555-0505",
+    "website": "https://altafitness.com",
+    "image": "fitness-center.jpg",
+    "membershipLevel": 2,
+    "tagline": "Fitness with a view"
+  },
+  {
+    "name": "Cottonwood Insurance Group",
+    "address": "8942 S 700 E, Sandy, UT 84070",
+    "phone": "(801) 555-0606",
+    "website": "https://cottonwoodinsurance.com",
+    "image": "insurance-group.jpg",
+    "membershipLevel": 3,
+    "tagline": "Choose the right coverage for your needs"
+  },
+  {
+    "name": "Bell Canyon Bakery",
+    "address": "10300 S State St, Sandy, UT 84070",
+    "phone": "(801) 555-0707",
+    "website": "https://bellcanyonbakery.com",
+    "image": "bakery.jpg",
+    "membershipLevel": 1,
+    "tagline": "Try our maple bacon donuts"
+  },
+  {
+    "name": "Dimple Dell Pet Care",
+    "address": "1355 E 10600 S, Sandy, UT 84094",
+    "phone": "(801) 555-0808",
+    "website": "https://dimpledellpets.com",
+    "image": "pet-care.jpg",
+    "membershipLevel": 1,
+    "tagline": "Compassionate Care for Your Furry Friends"
+  }
+]

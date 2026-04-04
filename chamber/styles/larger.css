@@ -1,0 +1,219 @@
+@media only screen and (min-width: 700px) {
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header {
+    grid-template-columns: 52px auto;
+  }
+
+  header span {
+    font-size: 1.8rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .navigation ul {
+    display: flex;
+  }
+
+  .navigation li {
+    flex: 1;
+  }
+
+  .navigation a {
+    font-size: 1rem;
+    text-align: center;
+    border-top: 0;
+    border-right: 1px solid #004080;
+  }
+
+  .navigation li:last-child a {
+    border-right: 0;
+  }
+
+  main {
+    padding: 0 1rem 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 1rem;
+  }
+
+  .view-button {
+    min-width: 140px;
+    margin: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  .member-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .member-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .member-card .tagline {
+    font-size: 1rem;
+  }
+
+  .member-card p {
+    font-size: 1rem;
+  }
+
+  .member-list {
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .member-list-item {
+    padding: 1.25rem;
+  }
+
+  .member-list-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .member-list-item p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-info {
+    margin-bottom: 2rem;
+  }
+
+  .footer-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .footer-info p {
+    font-size: 1rem;
+  }
+
+  .footer-credits p {
+    font-size: 0.9rem;
+  }
+
+  .hero-section {
+    margin-bottom: 2rem;
+  }
+
+  .hero-section img {
+    max-height: 500px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 2.5rem;
+  }
+
+  .cta-button {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    grid-template-areas:
+      "hero hero"
+      "events weather"
+      "spotlights spotlights";
+  }
+
+  .hero-section {
+    grid-area: hero;
+  }
+
+  .events-section {
+    grid-area: events;
+  }
+
+  .weather-section {
+    grid-area: weather;
+  }
+
+  .spotlights-section {
+    grid-area: spotlights;
+  }
+
+  .events-section h2,
+  .weather-section h2,
+  .spotlights-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .spotlight-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .spotlight-card img {
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .member-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Join Page - 2 column layout on large screens */
+  .join-page {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .join-form-section {
+    margin-bottom: 0;
+  }
+
+  .join-form-section h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Thank You Page - centered content */
+  .thank-you-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+  }
+
+  .thank-you-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .application-summary {
+    padding: 2rem;
+  }
+}

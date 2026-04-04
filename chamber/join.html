@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join the Sandy Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Apply for membership in the Sandy Utah Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold membership levels."
+    />
+    <meta name="author" content="Isaac Endicott" />
+
+    <meta property="og:title" content="Join the Sandy Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://endicottisaac.github.io/wdd231/chamber/images/sandy-chamber-og.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://endicottisaac.github.io/wdd231/chamber/join.html"
+    />
+    <meta
+      property="og:description"
+      content="Apply for membership in the Sandy Utah Chamber of Commerce."
+    />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script type="module" src="scripts/join.mjs"></script>
+    <script type="module" src="scripts/footer.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/chamber-logo.svg"
+        alt="Sandy Chamber of Commerce Logo"
+        width="512"
+        height="512"
+      />
+      <span>Sandy Chamber of Commerce</span>
+      <button
+        id="ham-btn"
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation menu"
+      ></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+      </ul>
+    </nav>
+    <main class="join-page">
+      <section class="join-form-section">
+        <h1>Membership Application</h1>
+        <form method="get" action="thankyou.html" id="join-form">
+          <label>
+            First Name*
+            <input
+              type="text"
+              name="first-name"
+              title="First Name"
+              autocomplete="given-name"
+              required
+            />
+          </label>
+          <label>
+            Last Name*
+            <input
+              type="text"
+              name="last-name"
+              title="Last Name"
+              autocomplete="family-name"
+              required
+            />
+          </label>
+          <label>
+            Organizational Title*
+            <input
+              type="text"
+              name="title"
+              title="Organizational Title (minimum 7 alpha characters, allows spaces and hyphens)"
+              pattern="[A-Za-z\s\-]{7,}"
+              autocomplete="organization-title"
+              required
+            />
+          </label>
+          <label>
+            Email*
+            <input
+              type="email"
+              name="email"
+              title="Email Address"
+              autocomplete="email"
+              placeholder="example@email.com"
+              required
+            />
+          </label>
+          <label>
+            Mobile Phone*
+            <input
+              type="tel"
+              name="mobile"
+              title="Mobile Phone Number"
+              autocomplete="tel"
+              placeholder="123-456-7890"
+              required
+            />
+          </label>
+
+          <label>
+            Business/Organization Name*
+            <input
+              type="text"
+              name="organization"
+              title="Business or Organization Name"
+              autocomplete="organization"
+              required
+            />
+          </label>
+
+          <fieldset>
+            <legend>Membership Level*</legend>
+            <label>
+              <input type="radio" name="membership" value="np" />
+              NP Membership (Free)
+            </label>
+            <label>
+              <input type="radio" name="membership" value="bronze" />
+              Bronze Membership ($200/year)
+            </label>
+            <label>
+              <input type="radio" name="membership" value="silver" />
+              Silver Membership ($400/year)
+            </label>
+            <label>
+              <input type="radio" name="membership" value="gold" />
+              Gold Membership ($600/year)
+            </label>
+          </fieldset>
+
+          <label>
+            Business/Organization Description
+            <textarea
+              name="description"
+              title="Business Description"
+              rows="5"
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp" />
+          <input type="submit" value="Join the Chamber" class="submit-button" />
+        </form>
+      </section>
+      <section class="membership-cards-section">
+        <h2>Membership Levels</h2>
+
+        <div class="membership-card np-card">
+          <h3>NP Membership</h3>
+          <p class="price">Free</p>
+          <button
+            class="info-button"
+            data-modal="np-modal"
+            type="button"
+            aria-label="Learn more about NP Membership"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="membership-card bronze-card">
+          <h3>Bronze Membership</h3>
+          <p class="price">$200/year</p>
+          <button
+            class="info-button"
+            data-modal="bronze-modal"
+            type="button"
+            aria-label="Learn more about Bronze Membership"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="membership-card silver-card">
+          <h3>Silver Membership</h3>
+          <p class="price">$400/year</p>
+          <button
+            class="info-button"
+            data-modal="silver-modal"
+            type="button"
+            aria-label="Learn more about Silver Membership"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="membership-card gold-card">
+          <h3>Gold Membership</h3>
+          <p class="price">$600/year</p>
+          <button
+            class="info-button"
+            data-modal="gold-modal"
+            type="button"
+            aria-label="Learn more about Gold Membership"
+          >
+            Learn More
+          </button>
+        </div>
+      </section>
+    </main>
+    <dialog id="np-modal" class="membership-modal">
+      <button class="close-modal" type="button" aria-label="Close modal">
+        ❌
+      </button>
+      <h3>NP Membership Benefits</h3>
+      <ul>
+        <li>Free membership for non-profit organizations</li>
+        <li>Basic chamber directory listing</li>
+        <li>Access to networking events</li>
+        <li>Monthly newsletter</li>
+      </ul>
+    </dialog>
+    <dialog id="bronze-modal" class="membership-modal">
+      <button class="close-modal" type="button" aria-label="Close modal">
+        ❌
+      </button>
+      <h3>Bronze Membership Benefits</h3>
+      <ul>
+        <li>All NP benefits</li>
+        <li>Ribbon cutting ceremonies</li>
+        <li>Business workshops</li>
+        <li>Social media mentions</li>
+      </ul>
+    </dialog>
+    <dialog id="silver-modal" class="membership-modal">
+      <button class="close-modal" type="button" aria-label="Close modal">
+        ❌
+      </button>
+      <h3>Silver Membership Benefits</h3>
+      <ul>
+        <li>All Bronze benefits</li>
+        <li>1 home page spotlight per year</li>
+        <li>Discounted event tickets</li>
+        <li>Quarterly magazine feature</li>
+      </ul>
+    </dialog>
+    <dialog id="gold-modal" class="membership-modal">
+      <button class="close-modal" type="button" aria-label="Close modal">
+        ❌
+      </button>
+      <h3>Gold Membership Benefits</h3>
+      <ul>
+        <li>All Silver benefits</li>
+        <li>4 home page spotlights per year</li>
+        <li>Premium directory placement</li>
+        <li>Exclusive gold member networking events</li>
+        <li>Free booth at annual chamber expo</li>
+      </ul>
+    </dialog>
+
+    <footer>
+      <div class="footer-info">
+        <h3>Sandy Chamber of Commerce</h3>
+        <p>10000 S Centennial Parkway</p>
+        <p>Sandy, UT 84070</p>
+        <p>Phone: (801) 555-5555</p>
+        <p>Email: info@sandychamber.com</p>
+      </div>
+      <div class="footer-credits">
+        <p>&copy; <span id="current-year"></span> Sandy Chamber of Commerce</p>
+        <p>Isaac Endicott | WDD 231</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>
