@@ -312,7 +312,7 @@ footer {
   max-width: 500px;
 }
 
-.hero-overlay h2 {
+.hero-overlay h1 {
   color: #fff;
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
@@ -367,7 +367,7 @@ footer {
 .event-date {
   margin: 0 0 0.5rem 0;
   font-weight: 700;
-  color: #2e8b57;
+  color: #1b6b3d;
   font-size: 0.9rem;
 }
 
