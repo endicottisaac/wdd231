@@ -5,7 +5,7 @@ export const discoverItems = [
     address: "1245 E 9400 S, Sandy, UT 84094",
     description:
       "A popular outdoor venue that hosts concerts, family events, and seasonal performances for the Sandy community.",
-    image: "sandy-amphitheater.jpg",
+    image: "sandy-amphitheater.webp",
     imageAlt: "Sandy Amphitheater in Sandy, Utah",
     link: "#",
   },
@@ -15,7 +15,7 @@ export const discoverItems = [
     address: "10600 S 1300 E, Sandy, UT 84094",
     description:
       "A large natural area with trails, open space, and scenic views that offers a quieter side of the city.",
-    image: "dimple-dell-park.jpg",
+    image: "dimple-dell-park.webp",
     imageAlt: "Dimple Dell Regional Park in Sandy, Utah",
     link: "#",
   },
@@ -25,7 +25,7 @@ export const discoverItems = [
     address: "9256 S State St, Sandy, UT 84070",
     description:
       "A major sports and event destination in Sandy that brings visitors to the area throughout the year.",
-    image: "rio-tinto-stadium.jpg",
+    image: "rio-tinto-stadium.webp",
     imageAlt: "Rio Tinto Stadium in Sandy, Utah",
     link: "#",
   },
@@ -35,7 +35,7 @@ export const discoverItems = [
     address: "10000 S Centennial Pkwy, Sandy, UT 84070",
     description:
       "The center of city government and public services, located near civic spaces and community gathering areas.",
-    image: "sandy-city-hall.jpg",
+    image: "sandy-city-hall.webp",
     imageAlt: "Sandy City Hall building in Sandy, Utah",
     link: "#",
   },
@@ -45,7 +45,7 @@ export const discoverItems = [
     address: "9565 S Highland Dr, Sandy, UT 84092",
     description:
       "A recreation center featuring fitness, swimming, and family-friendly programs that support an active community.",
-    image: "alta-canyon-sports-center.jpg",
+    image: "alta-canyon-sports-center.webp",
     imageAlt: "Alta Canyon Sports Center in Sandy, Utah",
     link: "#",
   },
@@ -55,7 +55,7 @@ export const discoverItems = [
     address: "10450 S State St, Sandy, UT 84070",
     description:
       "A regional shopping area with retail, dining, and entertainment options that draws steady local traffic.",
-    image: "shops-at-south-town.jpg",
+    image: "shops-at-south-town.webp",
     imageAlt: "The Shops at South Town in Sandy, Utah",
     link: "#",
   },
@@ -65,7 +65,7 @@ export const discoverItems = [
     address: "8744 S 150 E, Sandy, UT 84070",
     description:
       "A small local museum that highlights the history of Sandy and helps preserve the character of the area.",
-    image: "sandy-museum.jpg",
+    image: "sandy-museum.webp",
     imageAlt: "Sandy Museum in Sandy, Utah",
     link: "#",
   },
@@ -75,7 +75,7 @@ export const discoverItems = [
     address: "10200 S Wasatch Blvd, Sandy, UT 84092",
     description:
       "A gateway to hiking and mountain scenery that reflects the outdoor appeal of the Sandy area.",
-    image: "bell-canyon-trailhead.jpg",
+    image: "bell-canyon-trailhead.webp",
     imageAlt: "Bell Canyon Trailhead near Sandy, Utah",
     link: "#",
   },
