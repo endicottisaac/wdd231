@@ -140,6 +140,10 @@
       "spotlights spotlights";
   }
 
+  .discover-page {
+    display: block;
+  }
+
   .hero-section {
     grid-area: hero;
   }
@@ -174,6 +178,24 @@
 
   .spotlight-card img {
     height: 180px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card3"
+      "card4 card5"
+      "card6 card7"
+      "card8 card8";
+  }
+
+  .discover-heading,
+  .visit-message-section {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -215,5 +237,32 @@
 
   .application-summary {
     padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 card8";
+  }
+
+  .discover-card {
+    height: 100%;
+  }
+
+  .discover-figure {
+    transition:
+      transform 0.3s ease,
+      filter 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .discover-card:hover .discover-figure {
+    transform: translateY(-2px);
+    filter: brightness(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   }
 }

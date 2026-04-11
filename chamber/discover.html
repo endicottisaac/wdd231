@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandy Chamber of Commerce - Discover</title>
+    <meta
+      name="description"
+      content="Discover local attractions, parks, landmarks, and community highlights in Sandy, Utah."
+    />
+    <meta name="author" content="Isaac Endicott" />
+
+    <meta property="og:title" content="Sandy Chamber of Commerce - Discover" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://endicottisaac.github.io/wdd231/chamber/images/sandy-chamber-og.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://endicottisaac.github.io/wdd231/chamber/discover.html"
+    />
+    <meta
+      property="og:description"
+      content="Explore area highlights and points of interest in Sandy, Utah."
+    />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script type="module" src="scripts/discover.mjs"></script>
+    <script type="module" src="scripts/footer.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/chamber-logo.svg"
+        alt="Sandy Chamber of Commerce Logo"
+        width="512"
+        height="512"
+      />
+      <span>Sandy Chamber of Commerce</span>
+      <button
+        id="ham-btn"
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation menu"
+      ></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <main class="discover-page">
+      <section class="discover-heading">
+        <h1>Discover Sandy, Utah</h1>
+        <p>
+          Explore a few of the places that make Sandy a welcoming area for
+          visitors, residents, and local businesses.
+        </p>
+      </section>
+
+      <section
+        class="visit-message-section"
+        aria-labelledby="visit-message-heading"
+      >
+        <h2 id="visit-message-heading">Visitor Message</h2>
+        <p id="visit-message">
+          Welcome! Let us know if you have any questions.
+        </p>
+      </section>
+
+      <section class="discover-section" aria-labelledby="discover-grid-heading">
+        <h2 id="discover-grid-heading">Local Highlights</h2>
+        <div id="discover-grid" class="discover-grid"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <h3>Sandy Chamber of Commerce</h3>
+        <p>10000 S Centennial Parkway</p>
+        <p>Sandy, UT 84070</p>
+        <p>Phone: (801) 555-5555</p>
+        <p>Email: info@sandychamber.com</p>
+      </div>
+      <div class="footer-credits">
+        <p>&copy; <span id="current-year"></span> Sandy Chamber of Commerce</p>
+        <p>Isaac Endicott | WDD 231</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>
