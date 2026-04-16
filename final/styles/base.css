@@ -130,31 +130,22 @@ h1 {
   color: var(--color-primary);
   font-family: var(--font-heading);
   line-height: 1.15;
-}
-
-h2 {
-  margin-top: 0;
-  color: var(--color-primary);
-  font-family: var(--font-heading);
-  line-height: 1.15;
-}
-
-h3 {
-  margin-top: 0;
-  color: var(--color-primary);
-  font-family: var(--font-heading);
-  line-height: 1.15;
-}
-
-h1 {
   font-size: 2rem;
 }
 
 h2 {
+  margin-top: 0;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  line-height: 1.15;
   font-size: 1.5rem;
 }
 
 h3 {
+  margin-top: 0;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  line-height: 1.15;
   font-size: 1.2rem;
 }
 
@@ -199,6 +190,7 @@ button {
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
+  border-left: 6px solid var(--color-accent);
 }
 
 .featured-section {
@@ -239,6 +231,7 @@ button {
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
+  border-left: 6px solid var(--color-accent);
 }
 
 .library-filters {
@@ -255,6 +248,7 @@ button {
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
+  min-height: 900px;
 }
 
 .saved-workout-section {
@@ -287,14 +281,6 @@ button {
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
-}
-
-.home-hero-section {
-  border-left: 6px solid var(--color-accent);
-}
-
-.library-intro {
-  border-left: 6px solid var(--color-accent);
 }
 
 .home-hero-section p {
@@ -365,73 +351,58 @@ button {
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
-}
-
-.secondary-button {
-  display: inline-block;
-  min-height: 44px;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  font-weight: 700;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.details-button {
-  display: inline-block;
-  min-height: 44px;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  font-weight: 700;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.save-button {
-  display: inline-block;
-  min-height: 44px;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  font-weight: 700;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.clear-button {
-  display: inline-block;
-  min-height: 44px;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
-  font-weight: 700;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.primary-button {
-  border: 1px solid var(--color-primary);
-  background: var(--color-primary);
-  color: #fff;
-}
-
-.details-button {
-  border: 1px solid var(--color-primary);
-  background: var(--color-primary);
-  color: #fff;
-}
-
-.save-button {
   border: 1px solid var(--color-primary);
   background: var(--color-primary);
   color: #fff;
 }
 
 .secondary-button {
+  display: inline-block;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
   border: 1px solid var(--color-primary);
   background: #fff;
   color: var(--color-primary);
 }
 
+.details-button {
+  display: inline-block;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.save-button {
+  display: inline-block;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: #fff;
+}
+
 .clear-button {
+  display: inline-block;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
   border: 1px solid var(--color-primary);
   background: #fff;
   color: var(--color-primary);
@@ -458,6 +429,7 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  min-height: 760px;
 }
 
 .saved-workout-list {
@@ -477,6 +449,7 @@ button {
   border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 1rem;
+  text-align: center;
 }
 
 .exercise-card {
@@ -498,10 +471,6 @@ button {
   border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 1rem;
-}
-
-.stat-card {
-  text-align: center;
 }
 
 .stat-card h2 {
@@ -527,6 +496,10 @@ button {
 
 .exercise-description {
   color: #333;
+}
+
+.loading-card {
+  color: var(--color-muted);
 }
 
 .featured-workout .exercise-card {
@@ -574,6 +547,7 @@ textarea {
   margin-bottom: 1rem;
   font-weight: 700;
   color: var(--color-muted);
+  min-height: 1.5rem;
 }
 
 fieldset {
