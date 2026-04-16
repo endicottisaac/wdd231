@@ -1,0 +1,111 @@
+@media only screen and (min-width: 700px) {
+  header {
+    max-width: 1100px;
+    margin: 0 auto;
+    grid-template-columns: 54px auto;
+  }
+
+  nav {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  footer {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation ul {
+    display: flex;
+  }
+
+  .navigation li {
+    flex: 1;
+  }
+
+  .navigation a {
+    text-align: center;
+    border-top: 0;
+    border-right: 1px solid #233949;
+  }
+
+  .navigation li:last-child a {
+    border-right: 0;
+  }
+
+  .stats-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .benefits-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .library-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .saved-workout-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    grid-template-areas:
+      "hero hero"
+      "featured stats"
+      "spotlights spotlights"
+      "tips tips";
+  }
+
+  .home-hero {
+    grid-area: hero;
+  }
+
+  .featured-panel {
+    grid-area: featured;
+  }
+
+  .stats-panel {
+    grid-area: stats;
+  }
+
+  .spotlights-panel {
+    grid-area: spotlights;
+  }
+
+  .tips-panel {
+    grid-area: tips;
+  }
+
+  .my-workout-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .library-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

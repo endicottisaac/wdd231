@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathway to Fitness - Workout Confirmation</title>
+    <meta
+      name="description"
+      content="Review the submitted details for your Pathway to Fitness workout request."
+    />
+    <meta name="author" content="Isaac Endicott" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script type="module" src="scripts/confirmation.mjs"></script>
+    <script type="module" src="scripts/footer.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/pathway-logo.svg" alt="Pathway to Fitness logo" width="120" height="120" />
+      <div class="site-brand">
+        <strong>Pathway to Fitness</strong>
+        <span>Fitness Tracker and Workout Planner</span>
+      </div>
+      <button
+        id="ham-btn"
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation menu"
+      ></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html">Exercise Library</a></li>
+        <li><a href="my-workout.html">My Workout</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="confirmation-section">
+        <h1>Workout Plan Submitted</h1>
+        <p>Here is a summary of the information you submitted.</p>
+        <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+        <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+        <p><strong>Workout Goal:</strong> <span id="confirm-goal"></span></p>
+        <p><strong>Target Day:</strong> <span id="confirm-day"></span></p>
+        <p><strong>Notes:</strong> <span id="confirm-notes"></span></p>
+        <p><strong>Selected Exercises:</strong> <span id="confirm-exercises"></span></p>
+        <div class="hero-actions">
+          <a href="my-workout.html" class="primary-button">Back to My Workout</a>
+          <a href="library.html" class="secondary-button">Browse More Exercises</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>Pathway to Fitness</h3>
+      <p>A simple workout planner for WDD 231.</p>
+      <div class="footer-links">
+        <a href="#">Video Demo</a>
+        <a href="attributions.html">Attributions</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; <span id="current-year"></span> Isaac Endicott</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>

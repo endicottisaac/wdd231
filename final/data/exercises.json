@@ -1,0 +1,178 @@
+[
+  {
+    "id": "bodyweight-squat",
+    "name": "Bodyweight Squat",
+    "category": "Strength",
+    "muscleGroup": "Legs",
+    "equipment": "None",
+    "difficulty": "Beginner",
+    "duration": 10,
+    "description": "A simple lower-body exercise that builds strength and control through the hips, quads, and glutes.",
+    "featured": true
+  },
+  {
+    "id": "reverse-lunge",
+    "name": "Reverse Lunge",
+    "category": "Strength",
+    "muscleGroup": "Legs",
+    "equipment": "None",
+    "difficulty": "Beginner",
+    "duration": 12,
+    "description": "Step back into a controlled lunge to improve balance, leg strength, and single-leg stability.",
+    "featured": true
+  },
+  {
+    "id": "glute-bridge",
+    "name": "Glute Bridge",
+    "category": "Strength",
+    "muscleGroup": "Glutes",
+    "equipment": "None",
+    "difficulty": "Beginner",
+    "duration": 8,
+    "description": "A floor-based movement that targets the glutes and hamstrings while reinforcing core control.",
+    "featured": false
+  },
+  {
+    "id": "push-up",
+    "name": "Push-Up",
+    "category": "Strength",
+    "muscleGroup": "Chest",
+    "equipment": "None",
+    "difficulty": "Intermediate",
+    "duration": 10,
+    "description": "A classic upper-body movement that strengthens the chest, shoulders, arms, and core.",
+    "featured": true
+  },
+  {
+    "id": "incline-push-up",
+    "name": "Incline Push-Up",
+    "category": "Strength",
+    "muscleGroup": "Chest",
+    "equipment": "Bench",
+    "difficulty": "Beginner",
+    "duration": 8,
+    "description": "A more accessible push-up variation that reduces load while still training pressing form.",
+    "featured": false
+  },
+  {
+    "id": "dumbbell-row",
+    "name": "Dumbbell Row",
+    "category": "Strength",
+    "muscleGroup": "Back",
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "duration": 12,
+    "description": "A pulling movement that develops the upper back and helps balance pressing exercises.",
+    "featured": false
+  },
+  {
+    "id": "superman-hold",
+    "name": "Superman Hold",
+    "category": "Mobility",
+    "muscleGroup": "Back",
+    "equipment": "None",
+    "difficulty": "Beginner",
+    "duration": 6,
+    "description": "A simple bodyweight hold that activates the posterior chain and improves body awareness.",
+    "featured": false
+  },
+  {
+    "id": "plank",
+    "name": "Plank",
+    "category": "Core",
+    "muscleGroup": "Core",
+    "equipment": "None",
+    "difficulty": "Beginner",
+    "duration": 5,
+    "description": "A foundational core exercise that trains bracing, shoulder stability, and posture.",
+    "featured": true
+  },
+  {
+    "id": "dead-bug",
+    "name": "Dead Bug",
+    "category": "Core",
+    "muscleGroup": "Core",
+    "equipment": "None",
+    "difficulty": "Beginner",
+    "duration": 7,
+    "description": "A controlled core movement that teaches trunk stability while the arms and legs move.",
+    "featured": false
+  },
+  {
+    "id": "mountain-climber",
+    "name": "Mountain Climber",
+    "category": "Cardio",
+    "muscleGroup": "Core",
+    "equipment": "None",
+    "difficulty": "Intermediate",
+    "duration": 8,
+    "description": "A fast-paced conditioning movement that raises the heart rate while challenging the core.",
+    "featured": false
+  },
+  {
+    "id": "jumping-jack",
+    "name": "Jumping Jack",
+    "category": "Cardio",
+    "muscleGroup": "Full Body",
+    "equipment": "None",
+    "difficulty": "Beginner",
+    "duration": 5,
+    "description": "A simple warm-up or cardio option that keeps the whole body moving with little setup.",
+    "featured": false
+  },
+  {
+    "id": "step-up",
+    "name": "Step-Up",
+    "category": "Strength",
+    "muscleGroup": "Legs",
+    "equipment": "Bench",
+    "difficulty": "Beginner",
+    "duration": 10,
+    "description": "A practical lower-body exercise that improves leg strength and balance one side at a time.",
+    "featured": false
+  },
+  {
+    "id": "shoulder-press",
+    "name": "Shoulder Press",
+    "category": "Strength",
+    "muscleGroup": "Shoulders",
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "duration": 10,
+    "description": "A vertical pressing movement that builds shoulder strength and overhead stability.",
+    "featured": false
+  },
+  {
+    "id": "bicep-curl",
+    "name": "Bicep Curl",
+    "category": "Strength",
+    "muscleGroup": "Arms",
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "duration": 8,
+    "description": "A focused arm exercise that trains elbow flexion and controlled lifting technique.",
+    "featured": false
+  },
+  {
+    "id": "tricep-dip",
+    "name": "Tricep Dip",
+    "category": "Strength",
+    "muscleGroup": "Arms",
+    "equipment": "Bench",
+    "difficulty": "Intermediate",
+    "duration": 8,
+    "description": "A bench-supported movement that challenges the triceps, shoulders, and body control.",
+    "featured": false
+  },
+  {
+    "id": "hamstring-stretch",
+    "name": "Hamstring Stretch",
+    "category": "Mobility",
+    "muscleGroup": "Legs",
+    "equipment": "None",
+    "difficulty": "Beginner",
+    "duration": 4,
+    "description": "A light stretch that helps improve flexibility and reduce tightness in the back of the legs.",
+    "featured": false
+  }
+]

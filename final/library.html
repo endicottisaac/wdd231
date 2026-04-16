@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathway to Fitness - Exercise Library</title>
+    <meta
+      name="description"
+      content="Browse the Pathway to Fitness exercise library and filter movements by muscle group, equipment, and difficulty."
+    />
+    <meta name="author" content="Isaac Endicott" />
+    <meta property="og:title" content="Pathway to Fitness - Exercise Library" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://endicottisaac.github.io/wdd231/final/images/pathway-logo.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://endicottisaac.github.io/wdd231/final/library.html"
+    />
+    <meta
+      property="og:description"
+      content="Filter and save exercises from a simple library of strength, cardio, and mobility movements."
+    />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script type="module" src="scripts/library.mjs"></script>
+    <script type="module" src="scripts/footer.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/pathway-logo.svg" alt="Pathway to Fitness logo" width="120" height="120" />
+      <div class="site-brand">
+        <strong>Pathway to Fitness</strong>
+        <span>Fitness Tracker and Workout Planner</span>
+      </div>
+      <button
+        id="ham-btn"
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation menu"
+      ></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html">Exercise Library</a></li>
+        <li><a href="my-workout.html">My Workout</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="library-intro">
+        <h1>Exercise Library</h1>
+        <p>
+          Filter exercises by body area, equipment, and difficulty so you can
+          build a workout that fits your space and your time.
+        </p>
+      </section>
+
+      <section class="library-filters">
+        <h2>Filter Exercises</h2>
+        <form id="filter-form">
+          <label>
+            Muscle Group
+            <select id="muscle-group" name="muscle-group">
+              <option value="all">All Muscle Groups</option>
+            </select>
+          </label>
+          <label>
+            Equipment
+            <select id="equipment" name="equipment">
+              <option value="all">All Equipment</option>
+            </select>
+          </label>
+          <label>
+            Difficulty
+            <select id="difficulty" name="difficulty">
+              <option value="all">All Levels</option>
+            </select>
+          </label>
+        </form>
+      </section>
+
+      <section class="library-results">
+        <h2>Exercises</h2>
+        <p id="results-count" class="results-count">Loading exercise count...</p>
+        <div id="library-grid" class="library-grid">
+          <p>Loading exercise library...</p>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="exercise-modal">
+      <div id="modal-content"></div>
+      <div class="dialog-actions">
+        <button id="close-modal" type="button" class="secondary-button">Close</button>
+      </div>
+    </dialog>
+
+    <footer>
+      <h3>Pathway to Fitness</h3>
+      <p>A simple workout planner for WDD 231.</p>
+      <div class="footer-links">
+        <a href="#">Video Demo</a>
+        <a href="attributions.html">Attributions</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; <span id="current-year"></span> Isaac Endicott</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>

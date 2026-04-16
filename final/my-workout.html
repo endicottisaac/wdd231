@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathway to Fitness - My Workout</title>
+    <meta
+      name="description"
+      content="Review your saved exercises, see a simple workout summary, and submit your Pathway to Fitness workout plan."
+    />
+    <meta name="author" content="Isaac Endicott" />
+    <meta property="og:title" content="Pathway to Fitness - My Workout" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://endicottisaac.github.io/wdd231/final/images/pathway-logo.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://endicottisaac.github.io/wdd231/final/my-workout.html"
+    />
+    <meta
+      property="og:description"
+      content="View your saved workout selections and submit a simple training plan."
+    />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script type="module" src="scripts/my-workout.mjs"></script>
+    <script type="module" src="scripts/footer.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/pathway-logo.svg" alt="Pathway to Fitness logo" width="120" height="120" />
+      <div class="site-brand">
+        <strong>Pathway to Fitness</strong>
+        <span>Fitness Tracker and Workout Planner</span>
+      </div>
+      <button
+        id="ham-btn"
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation menu"
+      ></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html">Exercise Library</a></li>
+        <li><a href="my-workout.html">My Workout</a></li>
+      </ul>
+    </nav>
+    <main class="my-workout-layout">
+      <section class="saved-workout-section">
+        <h1>My Workout</h1>
+        <p>Review your saved exercise ideas and clear them anytime as you refine your next session.</p>
+        <div id="saved-workout-list" class="saved-workout-list">
+          <p>Loading your saved workout...</p>
+        </div>
+        <div class="workout-actions">
+          <button id="clear-workout" type="button" class="clear-button">Clear Saved Workout</button>
+          <a href="library.html" class="secondary-button">Back to Library</a>
+        </div>
+      </section>
+
+      <section class="workout-summary-section">
+        <h2>Workout Summary</h2>
+        <div id="workout-summary">
+          <p>Loading summary...</p>
+        </div>
+      </section>
+
+      <section class="workout-form-section">
+        <h2>Workout Request Form</h2>
+        <form method="get" action="workout-confirmation.html">
+          <label>
+            Name
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label>
+            Workout Goal
+            <select name="goal" required>
+              <option value="">Select a goal</option>
+              <option value="General Fitness">General Fitness</option>
+              <option value="Strength">Strength</option>
+              <option value="Mobility">Mobility</option>
+              <option value="Cardio">Cardio</option>
+            </select>
+          </label>
+          <label>
+            Target Day
+            <input type="date" name="day" required />
+          </label>
+          <label>
+            Notes
+            <textarea name="notes" rows="4"></textarea>
+          </label>
+          <input type="hidden" name="selected-exercises" id="selected-exercises" />
+          <input type="submit" value="Submit Workout Plan" class="primary-button" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h3>Pathway to Fitness</h3>
+      <p>A simple workout planner for WDD 231.</p>
+      <div class="footer-links">
+        <a href="#">Video Demo</a>
+        <a href="attributions.html">Attributions</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; <span id="current-year"></span> Isaac Endicott</p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>
