@@ -1,6 +1,7 @@
 :root {
   --color-primary: #102a43;
-  --color-accent: #f25f3a;
+  --color-accent: #8f351f;
+  --color-accent-text: #102a43;
   --color-surface: #fff7ec;
   --color-panel: #ffffff;
   --color-border: #d5d8dc;
@@ -172,16 +173,39 @@ input {
 select {
   font-size: 1rem;
   line-height: 1.5;
+  color: #111;
+  background: #fff;
 }
 
 textarea {
   font-size: 1rem;
   line-height: 1.5;
+  color: #111;
+  background: #fff;
 }
 
 button {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+input {
+  color: #111;
+  background: #fff;
+}
+
+option {
+  color: #111;
+}
+
+input::placeholder {
+  color: #555;
+  opacity: 1;
+}
+
+textarea::placeholder {
+  color: #555;
+  opacity: 1;
 }
 
 .home-hero-section {
@@ -207,6 +231,7 @@ button {
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
+  min-height: 260px;
 }
 
 .spotlights-section {
@@ -215,6 +240,7 @@ button {
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
+  min-height: 980px;
 }
 
 .tips-section {
@@ -417,12 +443,14 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  min-height: 180px;
 }
 
 .spotlight-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  min-height: 840px;
 }
 
 .library-grid {
@@ -480,7 +508,7 @@ button {
 
 .card-label {
   margin: 0 0 0.5rem;
-  color: var(--color-accent);
+  color: var(--color-accent-text);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -546,7 +574,7 @@ textarea {
 .results-count {
   margin-bottom: 1rem;
   font-weight: 700;
-  color: var(--color-muted);
+  color: var(--color-primary);
   min-height: 1.5rem;
 }
 
